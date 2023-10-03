@@ -1,5 +1,5 @@
 .testimonials {
-  background: url("http://localhost:5173/images/testimonial_bg.jpg");
+  background: url("/images/testimonial_bg.jpg");
   width: 100%;
   /* height: 100vh; */
   margin-top: 15rem;
