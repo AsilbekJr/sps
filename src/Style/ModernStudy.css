@@ -1,0 +1,32 @@
+.modernStudy .css-mhc70k-MuiGrid-root > .MuiGrid-item {
+  padding: 0px;
+}
+.modernStudy .overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #c04848; /* fallback for old browsers */
+  background: linear-gradient(rgba(31, 107, 249, 0.8), rgba(25, 137, 243, 0.8)),
+    url("https://media.licdn.com/dms/image/D4D12AQEkJxyAiRqKKQ/article-cover_image-shrink_600_2000/0/1686338185427?e=2147483647&v=beta&t=_sfWVeySlo-9fBMoH32n9souxdaa7z4YRAKg_pl-cmM"); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgba(39, 104, 245, 0.8), rgba(56, 115, 255, 0.8)),
+    url("https://media.licdn.com/dms/image/D4D12AQEkJxyAiRqKKQ/article-cover_image-shrink_600_2000/0/1686338185427?e=2147483647&v=beta&t=_sfWVeySlo-9fBMoH32n9souxdaa7z4YRAKg_pl-cmM"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.modernStudy .MuiContainer-root {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 880px) {
+  .modernStudy .overlay {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .modernStudy .MuiContainer-root {
+    padding: 10px;
+  }
+}

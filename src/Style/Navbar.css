@@ -1,0 +1,30 @@
+.ff-rubik {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+}
+.ff-monserrat {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.top-text {
+  font-weight: 300;
+}
+
+.top-nav-menu .MuiListItem-root {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main-navbar {
+  background: #fff4f4;
+}
+.main-navbar .css-z9rgza-MuiButtonBase-root-MuiButton-root {
+  padding: 8px;
+  border-radius: 0px;
+  border-bottom: 3.3px solid transparent;
+}
+.main-navbar .css-z9rgza-MuiButtonBase-root-MuiButton-root:focus-within {
+  /* background-color: #0f37d5; */
+  color: #0f37d5;
+  border-bottom: 3.3px solid #0f37d5;
+}

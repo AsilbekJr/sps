@@ -1,0 +1,20 @@
+.opportunities {
+  max-width: 1320px;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+.opportunities .css-mhc70k-MuiGrid-root .MuiGrid-item {
+  padding: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .opportunities {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .opportunities {
+    margin-top: 2rem;
+  }
+}
