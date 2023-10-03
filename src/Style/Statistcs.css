@@ -6,9 +6,9 @@
   align-items: center;
   /* background: #c04848; fallback for old browsers */
   background: linear-gradient(rgba(0, 47, 109, 0.874), rgba(0, 47, 109, 0.874)),
-    url("http://localhost:5173/images/statistics.jpg"); /* Chrome 10-25, Safari 5.1-6 */
+    url("./images/statistics.jpg"); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(rgba(0, 47, 109, 0.874), rgba(0, 47, 109, 0.874)),
-    url("http://localhost:5173/images/statistics.jpg"); /* Chrome 10-25, Safari 5.1-6 */
+    url("./images/statistics.jpg"); /* Chrome 10-25, Safari 5.1-6 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
