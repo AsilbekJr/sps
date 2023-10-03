@@ -91,11 +91,28 @@ const Testimonials = () => {
                   <Box className="tm_card">
                     <Box className="tm_icon">
                       <FormatQuote
-                        sx={{ color: "#5586f7 ", fontSize: "60px" }}
+                        sx={{
+                          color: "#5586f7 ",
+                          fontSize: {
+                            lg: "60px",
+                            md: "60px",
+                            sm: "50px",
+                            xs: "48px",
+                          },
+                        }}
                       />
                     </Box>
                     <Box className="tm_body">
-                      <Typography className="tm_cart-title">
+                      <Typography
+                        sx={{
+                          fontSize: {
+                            lg: "18px",
+                            md: "18px",
+                            sm: "16px",
+                            xs: "14px",
+                          },
+                        }}
+                      >
                         Kurs nafaqat teorik bilimlarni, balki amaliy
                         tajribalarni ham o'z ichiga olgan. Ustozlar har bir
                         talabaga individual yondashishdi va har birimizning
@@ -111,8 +128,14 @@ const Testimonials = () => {
                       <Typography
                         fontWeight={"300"}
                         fontStyle={"italic"}
-                        fontSize={"1rem"}
-                        className="tm_cart-subtitle"
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
+                        }}
                       >
                         Toshkent Jahon Tillari Unversiteti talabasi
                       </Typography>
@@ -129,7 +152,16 @@ const Testimonials = () => {
                       />
                     </Box>
                     <Box className="tm_body">
-                      <Typography className="tm_cart-title">
+                      <Typography
+                        sx={{
+                          fontSize: {
+                            lg: "18px",
+                            md: "18px",
+                            sm: "16px",
+                            xs: "14px",
+                          },
+                        }}
+                      >
                         Bu kursni tugatganimdan so'ng, men o'z sohamda yanada
                         ishonchli bo'ldim. Kursdagi har bir dars meni yangi
                         bilimlar bilan tanishtirdi va meni o'z sohamda yanada
@@ -146,8 +178,14 @@ const Testimonials = () => {
                       <Typography
                         fontWeight={"300"}
                         fontStyle={"italic"}
-                        fontSize={"1rem"}
-                        className="tm_cart-subtitle"
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
+                        }}
                       >
                         Qarshi Davlat Unversisteti talabasi
                       </Typography>
@@ -164,7 +202,16 @@ const Testimonials = () => {
                       />
                     </Box>
                     <Box className="tm_body">
-                      <Typography className="tm_cart-title">
+                      <Typography
+                        sx={{
+                          fontSize: {
+                            lg: "18px",
+                            md: "18px",
+                            sm: "16px",
+                            xs: "14px",
+                          },
+                        }}
+                      >
                         Bu kursni bitirganimdan so'ng, men o'zimni yangi va
                         qiziqarli ishlar qilishga tayyor his etdim. Ustozlar har
                         bir darsni tushunishga yordam berdilar va har doim
@@ -179,8 +226,14 @@ const Testimonials = () => {
                       <Typography
                         fontWeight={"300"}
                         fontStyle={"italic"}
-                        fontSize={"1rem"}
-                        className="tm_cart-subtitle"
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
+                        }}
                       >
                         Buxoro Davlat Unversisteti talabasi
                       </Typography>
@@ -197,7 +250,16 @@ const Testimonials = () => {
                       />
                     </Box>
                     <Box className="tm_body">
-                      <Typography className="tm_cart-title">
+                      <Typography
+                        sx={{
+                          fontSize: {
+                            lg: "18px",
+                            md: "18px",
+                            sm: "16px",
+                            xs: "14px",
+                          },
+                        }}
+                      >
                         O'quv markazidagi ustozlar o'z sohasida aniq va
                         tushunarli. Ular har bir mavzuni qanday o'rganish
                         kerakligini tushuntirishga yordam berdilar. Men bu
@@ -212,8 +274,14 @@ const Testimonials = () => {
                       <Typography
                         fontWeight={"300"}
                         fontStyle={"italic"}
-                        fontSize={"1rem"}
-                        className="tm_cart-subtitle"
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
+                        }}
                       >
                         Toshkent Til va Adabiyot Instituti talabasi
                       </Typography>
@@ -230,7 +298,16 @@ const Testimonials = () => {
                       />
                     </Box>
                     <Box className="tm_body">
-                      <Typography className="tm_cart-title">
+                      <Typography
+                        sx={{
+                          fontSize: {
+                            lg: "18px",
+                            md: "18px",
+                            sm: "16px",
+                            xs: "14px",
+                          },
+                        }}
+                      >
                         Bu o'quv markazini bitirganimdan so'ng, men o'zimni
                         yangi va qiziqarli ishlar qilishga tayyor his etdim.
                         Kursdagi ustozlar har bir darsni tushunishga yordam
@@ -248,8 +325,14 @@ const Testimonials = () => {
                       <Typography
                         fontWeight={"300"}
                         fontStyle={"italic"}
-                        fontSize={"1rem"}
-                        className="tm_cart-subtitle"
+                        sx={{
+                          fontSize: {
+                            lg: "16px",
+                            md: "16px",
+                            sm: "14px",
+                            xs: "12px",
+                          },
+                        }}
                       >
                         Buxoro Davlat Unversiteti talabasi
                       </Typography>

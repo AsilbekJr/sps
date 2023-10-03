@@ -17,8 +17,29 @@ const Banner = () => {
     }
   };
   return (
-    <Box className="banner" sx={{ mt: scroll ? "100px" : "0" }}>
-      <Container maxWidth="lg" sx={{ width: "100%", height: "100%" }}>
+    <Box
+      className="banner"
+      sx={{
+        mt: scroll ? "100px" : "0",
+        background: {
+          lg: "#fff4f4",
+          md: "#fff4f4",
+          sm: `linear-gradient(rgba(255, 244, 244, 0.874), rgba(255, 244, 244, 0.874)),
+    url("images/banner.png")`,
+          xs: `linear-gradient(rgba(255, 244, 244, 0.874), rgba(255, 244, 244, 0.874)),
+    url("images/banner.png")`,
+        },
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right center",
+      }}
+    >
+      <Container
+        maxWidth="lg"
+        sx={{
+          width: "100%",
+          height: "100%",
+        }}
+      >
         <Grid container spacing={2} sx={{ width: "100%", height: "100%" }}>
           <Grid item lg={6} md={6} sm={12} xs={12}>
             <ThemeProvider theme={font}>
@@ -47,8 +68,8 @@ const Banner = () => {
                     lineHeight: {
                       lg: "88px",
                       md: "70px",
-                      sm: "70px",
-                      xs: "70px",
+                      sm: "50px",
+                      xs: "50px",
                     },
 
                     fontWeight: "800",
