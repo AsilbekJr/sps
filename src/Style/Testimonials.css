@@ -63,22 +63,33 @@
   padding-top: 60px !important;
   padding-bottom: 60px !important;
 }
-
+.slick-dots li button {
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #8e8e8e;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
 .slick-dots li button:before {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 0; /* dotsning matnini yashirish */
-  line-height: 15px;
-  width: 10px; /* dotsning kengligi */
-  height: 10px; /* dotsning balandligi */
-  background: grey; /* dotsning rangi */
+  /* line-height: 15px; */
+  width: 7.5px; /* dotsning kengligi */
+  height: 7.5px; /* dotsning balandligi */
+  background: rgb(255, 255, 255); /* dotsning rangi */
   border-radius: 50%; /* dotsni yuvarloq qilish */
   opacity: 0.25; /* dotsning shaffofligi */
 }
 
 .slick-dots li.slick-active button:before {
-  width: 10px;
+  width: 7.5px;
   color: #fff;
-  background: #002f6c; /* active dotning rangi */
+  background: #9d9d9d; /* active dotning rangi */
   opacity: 1; /* active dotning shaffofligi */
 }
 

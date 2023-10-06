@@ -110,8 +110,8 @@ const Opportunities = () => {
                     xs: ".7rem 1.8rem",
                   },
                   margin: {
-                    lg: "0 1rem",
-                    md: "0 1rem",
+                    lg: "2rem 1rem",
+                    md: "2rem 1rem",
                     sm: "1rem 8px",
                     xs: "1rem 8px",
                   },
