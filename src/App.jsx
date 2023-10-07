@@ -9,18 +9,23 @@ import Statistics from "./Statistics";
 import Testimonials from "./Testimonials";
 import VideoInfo from "./VideoInfo";
 import Teachers from "./Teachers";
+import Footer from "./Footer";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
     <Box sx={{ backgroundColor: "#fff4f4" }}>
-      <Navbar />
-      <Banner />
-      <WhyChooseMe />
-      <ModernStudy />
-      <Opportunities />
-      <Testimonials />
-      <VideoInfo />
-      <Teachers />
+      <BrowserRouter>
+        <Navbar />
+        <Banner />
+        <WhyChooseMe />
+        <ModernStudy />
+        <Opportunities />
+        <Testimonials />
+        <VideoInfo />
+        <Teachers />
+        <Footer />
+      </BrowserRouter>
     </Box>
   );
 };

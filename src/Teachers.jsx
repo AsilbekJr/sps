@@ -1,4 +1,4 @@
-import { Avatar, Box, ThemeProvider, Typography } from "@mui/material";
+import { Box, ThemeProvider, Typography } from "@mui/material";
 import React from "react";
 import "./Style/Teachers.css";
 import Slider from "react-slick";

@@ -64,6 +64,9 @@
   padding-bottom: 60px !important;
 }
 .slick-dots li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   display: flex;
   border: 1px solid #8e8e8e;
@@ -72,6 +75,9 @@
   border-radius: 50%;
 }
 .slick-dots li button:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: 50%;
   left: 50%;
@@ -79,14 +85,17 @@
   color: #fff;
   font-size: 0; /* dotsning matnini yashirish */
   /* line-height: 15px; */
-  width: 7.5px; /* dotsning kengligi */
-  height: 7.5px; /* dotsning balandligi */
+  width: 8px; /* dotsning kengligi */
+  height: 8px; /* dotsning balandligi */
   background: rgb(255, 255, 255); /* dotsning rangi */
   border-radius: 50%; /* dotsni yuvarloq qilish */
   opacity: 0.25; /* dotsning shaffofligi */
 }
 
 .slick-dots li.slick-active button:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 7.5px;
   color: #fff;
   background: #9d9d9d; /* active dotning rangi */
