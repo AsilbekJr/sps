@@ -13,16 +13,17 @@ const Statistics = () => {
     justifyContent: "center",
     alignItems: "center",
     paddingBottom: { lg: 0, md: 0, sm: "2rem", xs: "2rem" },
+    paddingTop: { lg: 0, md: 0, sm: "2rem", xs: "2rem" },
     paddingRight: { lg: 2, md: 2, sm: "2rem", xs: "2rem" },
     borderRight: {
-      lg: ".6px solid #F1F6F5",
-      md: ".6px solid #F1F6F5",
+      lg: ".6px solid #FDE5D4",
+      md: ".6px solid #FDE5D4",
     },
     borderBottom: {
       lg: "1px solid transparent",
       md: "1px solid transparent",
-      sm: ".6px solid #F1F6F5",
-      xs: ".6px solid #F1F6F5",
+      sm: ".6px solid #FDE5D4",
+      xs: ".6px solid #FDE5D4",
     },
   };
   const [viewPortEntered, setViewPortEntered] = useState(false);
@@ -153,6 +154,7 @@ const Statistics = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       paddingBottom: { lg: 0, md: 0, sm: "2rem", xs: "2rem" },
+                      paddingTop: { lg: 0, md: 0, sm: "2rem", xs: "2rem" },
                       paddingRight: { lg: 2, md: 2, sm: "2rem", xs: "2rem" },
                     }}
                   >

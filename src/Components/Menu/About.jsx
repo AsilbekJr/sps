@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Title from "../../Title";
 import Statistics from "../../Statistics";
 import { rubik } from "../../fonts/fonts";
+import Teachers from "../../Teachers";
+import FAQ from "../../FAQ";
 
 const About = () => {
   const [scroll, setScroll] = useState(false);
@@ -28,7 +30,7 @@ const About = () => {
       >
         <Container maxWidth="lg">
           <Box sx={{ py: { lg: "3rem", md: "2rem", sm: "1rem", xs: "1rem" } }}>
-            <Title titleText={"Biz haqimizda"} />
+            <Title titleText={"Biz haqimizda"} color="#071952" />
           </Box>
           <Box>
             <Grid container spacing={4}>
@@ -94,6 +96,8 @@ const About = () => {
             </Box>
           </Box>
         </Container>
+        <Teachers />
+        <FAQ />
       </Box>
     </ThemeProvider>
   );

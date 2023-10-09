@@ -17,7 +17,6 @@ const Home = () => {
       <Opportunities />
       <Testimonials />
       <VideoInfo />
-      <Teachers />
     </Box>
   );
 };
