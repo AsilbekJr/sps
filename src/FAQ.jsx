@@ -79,20 +79,8 @@ export default function FAQ() {
             <AccordionDetails>
               <Box sx={{ p: "1rem" }}>
                 <Typography
-                  sx={{ color: "text.secondary" }}
                   sx={{
-                    fontSize: {
-                      lg: "1.1rem",
-                      md: "1rem",
-                      sm: ".9rem",
-                      xs: ".8rem",
-                    },
-                    fontSize: {
-                      lg: "1.1rem",
-                      md: "1rem",
-                      sm: ".9rem",
-                      xs: ".8rem",
-                    },
+                    color: "text.secondary",
                     fontSize: {
                       lg: "1.1rem",
                       md: "1rem",
@@ -168,20 +156,8 @@ export default function FAQ() {
               }}
             >
               <Typography
-                sx={{ color: "text.secondary" }}
                 sx={{
-                  fontSize: {
-                    lg: "1.1rem",
-                    md: "1rem",
-                    sm: ".9rem",
-                    xs: ".8rem",
-                  },
-                  fontSize: {
-                    lg: "1.1rem",
-                    md: "1rem",
-                    sm: ".9rem",
-                    xs: ".8rem",
-                  },
+                  color: "text.secondary",
                   fontSize: {
                     lg: "1.1rem",
                     md: "1rem",
@@ -264,20 +240,8 @@ export default function FAQ() {
               }}
             >
               <Typography
-                sx={{ color: "text.secondary" }}
                 sx={{
-                  fontSize: {
-                    lg: "1.1rem",
-                    md: "1rem",
-                    sm: ".9rem",
-                    xs: ".8rem",
-                  },
-                  fontSize: {
-                    lg: "1.1rem",
-                    md: "1rem",
-                    sm: ".9rem",
-                    xs: ".8rem",
-                  },
+                  color: "text.secondary",
                   fontSize: {
                     lg: "1.1rem",
                     md: "1rem",
@@ -350,20 +314,8 @@ export default function FAQ() {
               }}
             >
               <Typography
-                sx={{ color: "text.secondary" }}
                 sx={{
-                  fontSize: {
-                    lg: "1.1rem",
-                    md: "1rem",
-                    sm: ".9rem",
-                    xs: ".8rem",
-                  },
-                  fontSize: {
-                    lg: "1.1rem",
-                    md: "1rem",
-                    sm: ".9rem",
-                    xs: ".8rem",
-                  },
+                  color: "text.secondary",
                   fontSize: {
                     lg: "1.1rem",
                     md: "1rem",
