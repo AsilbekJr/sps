@@ -66,13 +66,11 @@ const Testimonials = () => {
     <ThemeProvider theme={rubik}>
       <Box className="testimonials">
         <Box className="container">
-          <Statistics />
           <Box
             sx={{
               overflow: "hidden",
               padding: "10px",
               position: "relative",
-              top: "-50px",
             }}
           >
             <Box

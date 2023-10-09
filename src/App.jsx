@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import WhyChooseMe from "./WhyChooseMe";
@@ -10,22 +10,25 @@ import Testimonials from "./Testimonials";
 import VideoInfo from "./VideoInfo";
 import Teachers from "./Teachers";
 import Footer from "./Footer";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import About from "./Components/Menu/About";
+import Home from "./Components/Menu/Home";
 
 const App = () => {
+  const { pathname } = useLocation();
+
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, [pathname]);
   return (
     <Box sx={{ backgroundColor: "#fff4f4" }}>
-      <BrowserRouter>
-        <Navbar />
-        <Banner />
-        <WhyChooseMe />
-        <ModernStudy />
-        <Opportunities />
-        <Testimonials />
-        <VideoInfo />
-        <Teachers />
-        <Footer />
-      </BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+      <Footer />
     </Box>
   );
 };

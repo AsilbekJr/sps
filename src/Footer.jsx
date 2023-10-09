@@ -70,10 +70,9 @@ const Footer = () => {
                   Sahifalar
                 </Typography>
               </ListItem>
-              <ListItem>
+              <ListItem component={Link} to={"/"}>
                 <Typography
                   variant="p"
-                  component={Link}
                   sx={{ textDecoration: "none" }}
                   fontWeight={"400"}
                   color={" #808080"}
@@ -81,10 +80,9 @@ const Footer = () => {
                   Bosh sahifa
                 </Typography>
               </ListItem>
-              <ListItem>
+              <ListItem component={Link} to={"about"}>
                 <Typography
                   variant="p"
-                  component={Link}
                   sx={{ textDecoration: "none" }}
                   fontWeight={"400"}
                   color={" #808080"}
@@ -92,10 +90,9 @@ const Footer = () => {
                   Biz haqimizda
                 </Typography>
               </ListItem>
-              <ListItem>
+              <ListItem component={Link} to={"/"}>
                 <Typography
                   variant="p"
-                  component={Link}
                   sx={{ textDecoration: "none" }}
                   fontWeight={"400"}
                   color={" #808080"}
@@ -103,10 +100,9 @@ const Footer = () => {
                   Kurslar
                 </Typography>
               </ListItem>
-              <ListItem>
+              <ListItem component={Link} to={"/"}>
                 <Typography
                   variant="p"
-                  component={Link}
                   sx={{ textDecoration: "none" }}
                   fontWeight={"400"}
                   color={" #808080"}

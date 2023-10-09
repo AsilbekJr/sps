@@ -1,19 +1,13 @@
 .statistics .overlay {
   width: 100%;
+  margin: auto;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #c04848; fallback for old browsers */
-  background: linear-gradient(rgba(0, 47, 109, 0.874), rgba(0, 47, 109, 0.874)),
-    url("/images/statistics.jpg"); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgba(0, 47, 109, 0.874), rgba(0, 47, 109, 0.874)),
-    url("/images/statistics.jpg"); /* Chrome 10-25, Safari 5.1-6 */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #fff;
   border-radius: 10px;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .statistics-container {
   max-width: 1320px;

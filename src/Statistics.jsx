@@ -2,7 +2,7 @@ import { Box, Container, Grid, ThemeProvider, Typography } from "@mui/material";
 import React, { useState } from "react";
 import "./Style/Statistcs.css";
 import VisibilitySensor from "react-visibility-sensor";
-import { font } from "./fonts/fonts";
+import { font, josefin } from "./fonts/fonts";
 import CountUp from "react-countup";
 
 const Statistics = () => {
@@ -38,9 +38,9 @@ const Statistics = () => {
         }
       }}
     >
-      <ThemeProvider theme={font}>
+      <ThemeProvider theme={josefin}>
         <Box className="statistics">
-          <Box sx={{ position: "relative", top: "-150px" }}>
+          <Box sx={{ position: "relative" }}>
             <Box className="statistics-container">
               <Box className="overlay">
                 <Grid
@@ -51,18 +51,18 @@ const Statistics = () => {
                     listStyle: "none",
                     fontSize: "45px",
                     fontWeight: "700",
-                    color: "#fff",
                   }}
                 >
                   <Grid item lg={3} md={3} sm={6} xs={12} sx={gridStyle}>
                     <Typography
                       sx={{
                         fontSize: {
-                          lg: "60px",
-                          md: "58px",
-                          sm: "50px",
-                          xs: "48px",
+                          lg: "38px",
+                          md: "32px",
+                          sm: "28px",
+                          xs: "26px",
                         },
+                        textAlign: "center",
                         fontWeight: "700",
                       }}
                     >
@@ -76,7 +76,7 @@ const Statistics = () => {
                       sx={{
                         fontSize: "25px",
                         fontWeight: "500",
-                        textAlign: "center",
+                        textAlign: "right",
                       }}
                     >
                       O'quvchilar
@@ -86,39 +86,41 @@ const Statistics = () => {
                     <Typography
                       sx={{
                         fontSize: {
-                          lg: "60px",
-                          md: "58px",
-                          sm: "50px",
-                          xs: "48px",
+                          lg: "38px",
+                          md: "32px",
+                          sm: "28px",
+                          xs: "26px",
                         },
+                        textAlign: "center",
                         fontWeight: "700",
                       }}
                     >
                       <CountUp
                         start={viewPortEntered ? null : 0}
                         prefix="+"
-                        end={viewPortEntered ? 3000 : 0}
+                        end={viewPortEntered ? 2000 : 0}
                       />
                     </Typography>
                     <Typography
                       sx={{
                         fontSize: "25px",
                         fontWeight: "500",
-                        textAlign: "center",
+                        textAlign: "right",
                       }}
                     >
-                      O'qishga kirganlar
+                      Talabalar
                     </Typography>
                   </Grid>
                   <Grid item lg={3} md={3} sm={6} xs={12} sx={gridStyle}>
                     <Typography
                       sx={{
                         fontSize: {
-                          lg: "60px",
-                          md: "58px",
-                          sm: "50px",
-                          xs: "48px",
+                          lg: "38px",
+                          md: "32px",
+                          sm: "28px",
+                          xs: "26px",
                         },
+                        textAlign: "center",
                         fontWeight: "700",
                       }}
                     >
@@ -132,7 +134,7 @@ const Statistics = () => {
                       sx={{
                         fontSize: "25px",
                         fontWeight: "500",
-                        textAlign: "center",
+                        textAlign: "right",
                       }}
                     >
                       O'qituvchilar
@@ -157,11 +159,12 @@ const Statistics = () => {
                     <Typography
                       sx={{
                         fontSize: {
-                          lg: "60px",
-                          md: "58px",
-                          sm: "50px",
-                          xs: "48px",
+                          lg: "38px",
+                          md: "32px",
+                          sm: "28px",
+                          xs: "26px",
                         },
+                        textAlign: "center",
                         fontWeight: "700",
                       }}
                     >
@@ -177,7 +180,7 @@ const Statistics = () => {
                       sx={{
                         fontSize: "25px",
                         fontWeight: "500",
-                        textAlign: "center",
+                        textAlign: "right",
                       }}
                     >
                       Fanlar

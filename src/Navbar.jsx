@@ -14,14 +14,15 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Call, Facebook, Instagram, Telegram } from "@mui/icons-material";
 import "./Style/Navbar.css";
 import { font } from "./fonts/fonts";
+import { Link } from "react-router-dom";
 const pages = [
   {
     name: "Bosh Sahifa",
-    path: "home",
+    path: "/",
   },
   {
     name: "Biz haqimizda",
-    path: "courses",
+    path: "about",
   },
   {
     name: "Kurslar",
@@ -146,8 +147,11 @@ function Navbar() {
                   fontWeight: "600",
                   fontSize: "30px",
                   marginRight: "3rem",
+                  textDecoration: "none",
                 }}
                 className="ff-rubik"
+                component={Link}
+                to="/"
               >
                 Sadikov Private School
               </Box>
@@ -182,8 +186,18 @@ function Navbar() {
                   }}
                 >
                   {pages.map((page, index) => (
-                    <MenuItem key={index} onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">{page.name}</Typography>
+                    <MenuItem
+                      key={index}
+                      onClick={handleCloseNavMenu}
+                      component={Link}
+                      to={page.path}
+                    >
+                      <Typography
+                        sx={{ textDecoration: "none" }}
+                        textAlign="center"
+                      >
+                        {page.name}
+                      </Typography>
                     </MenuItem>
                   ))}
                 </Menu>
@@ -200,6 +214,8 @@ function Navbar() {
               >
                 {pages.map((page, index) => (
                   <Button
+                    component={Link}
+                    to={page.path}
                     key={index}
                     onClick={handleCloseNavMenu}
                     sx={{
@@ -209,7 +225,9 @@ function Navbar() {
                       height: "100%",
                     }}
                   >
-                    <Typography sx={{ height: "100%" }}>{page.name}</Typography>
+                    <Typography sx={{ height: "100%", textDecoration: "none" }}>
+                      {page.name}
+                    </Typography>
                   </Button>
                 ))}
               </Box>

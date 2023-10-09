@@ -81,8 +81,8 @@ const WhyChooseMe = () => {
               />
             </Box>
             <Grid container spacing={2}>
-              {content.map((item) => (
-                <Grid item xs={12} sm={6} md={4} lg={3}>
+              {content.map((item, index) => (
+                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
                   <Card
                     sx={{
                       maxWidth: matchesXS ? "100%" : 345,

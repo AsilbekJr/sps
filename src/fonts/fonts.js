@@ -19,3 +19,12 @@ export const rubik = createTheme({
     fontWeightMedium: 500,
   },
 });
+export const josefin = createTheme({
+  typography: {
+    fontFamily: `"Josefin Slab", "Helvetica", "Arial", sans-serif`,
+    fontSize: 16,
+    fontWeightLight: 300,
+    fontWeightRegular: 300,
+    fontWeightMedium: 500,
+  },
+});
