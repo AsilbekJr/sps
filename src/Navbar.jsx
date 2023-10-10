@@ -25,8 +25,8 @@ const pages = [
     path: "about",
   },
   {
-    name: "Kurslar",
-    path: "courses",
+    name: "Yo'nalishlar",
+    path: "directions",
   },
   {
     name: "Blog",

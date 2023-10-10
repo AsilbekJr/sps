@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Box, Container, ThemeProvider } from "@mui/material";
 import Title from "./Title";
-import { Add, PlusOne, Remove } from "@mui/icons-material";
+import { Add, CheckCircle, PlusOne, Remove } from "@mui/icons-material";
 import { font } from "./fonts/fonts";
 
 export default function FAQ() {
@@ -22,14 +22,14 @@ export default function FAQ() {
         <Container maxWidth="lg">
           <Title textAlign={"center"} titleText={"Ko'p beriladigan savollar"} />
           <Accordion
+            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
           >
             <AccordionSummary
               sx={{
-                transition: "all .6s",
                 p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel1" ? "#132043" : "",
+                background: expanded === "panel1" ? "#ff7f46" : "",
                 color: expanded === "panel1" ? "#fff" : "#000",
               }}
               expandIcon={
@@ -38,21 +38,22 @@ export default function FAQ() {
                     sx={{
                       color: "#fff",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
                 ) : (
                   <Add
                     sx={{
+                      color: "#ff7f46",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
@@ -61,6 +62,14 @@ export default function FAQ() {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
+              <Box sx={{ m: "0 1rem 0 0rem" }}>
+                <CheckCircle
+                  sx={{
+                    color: expanded === "panel1" ? "#fff" : "#ff7f46",
+                    fontSize: "1.9rem",
+                  }}
+                />
+              </Box>
               <Typography
                 sx={{
                   fontWeight: "500",
@@ -97,13 +106,14 @@ export default function FAQ() {
             </AccordionDetails>
           </Accordion>
           <Accordion
+            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
           >
             <AccordionSummary
               sx={{
                 p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel2" ? "#132043" : "",
+                background: expanded === "panel2" ? "#ff7f46" : "",
                 color: expanded === "panel2" ? "#fff" : "#000",
               }}
               expandIcon={
@@ -112,21 +122,22 @@ export default function FAQ() {
                     sx={{
                       color: "#fff",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
                 ) : (
                   <Add
                     sx={{
+                      color: "#ff7f46",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
@@ -135,6 +146,14 @@ export default function FAQ() {
               aria-controls="panel2bh-content"
               id="panel2bh-header"
             >
+              <Box sx={{ m: "0 1rem 0 0rem" }}>
+                <CheckCircle
+                  sx={{
+                    color: expanded === "panel2" ? "#fff" : "#ff7f46",
+                    fontSize: "1.9rem",
+                  }}
+                />
+              </Box>
               <Typography
                 sx={{
                   fontWeight: "500",
@@ -181,13 +200,14 @@ export default function FAQ() {
             </AccordionDetails>
           </Accordion>
           <Accordion
+            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
             expanded={expanded === "panel3"}
             onChange={handleChange("panel3")}
           >
             <AccordionSummary
               sx={{
                 p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel3" ? "#132043" : "",
+                background: expanded === "panel3" ? "#ff7f46" : "",
                 color: expanded === "panel3" ? "#fff" : "#000",
               }}
               expandIcon={
@@ -196,21 +216,22 @@ export default function FAQ() {
                     sx={{
                       color: "#fff",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
                 ) : (
                   <Add
                     sx={{
+                      color: "#ff7f46",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
@@ -219,6 +240,14 @@ export default function FAQ() {
               aria-controls="panel3bh-content"
               id="panel3bh-header"
             >
+              <Box sx={{ m: "0 1rem 0 0rem" }}>
+                <CheckCircle
+                  sx={{
+                    color: expanded === "panel3" ? "#fff" : "#ff7f46",
+                    fontSize: "1.9rem",
+                  }}
+                />
+              </Box>
               <Typography
                 sx={{
                   fontWeight: "500",
@@ -255,13 +284,14 @@ export default function FAQ() {
             </AccordionDetails>
           </Accordion>
           <Accordion
+            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
             expanded={expanded === "panel4"}
             onChange={handleChange("panel4")}
           >
             <AccordionSummary
               sx={{
                 p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel4" ? "#132043" : "",
+                background: expanded === "panel4" ? "#ff7f46" : "",
                 color: expanded === "panel4" ? "#fff" : "#000",
               }}
               expandIcon={
@@ -270,21 +300,22 @@ export default function FAQ() {
                     sx={{
                       color: "#fff",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
                 ) : (
                   <Add
                     sx={{
+                      color: "#ff7f46",
                       fontSize: {
-                        lg: "2.5rem",
-                        md: "2rem",
-                        sm: "2rem",
-                        xs: "2rem",
+                        lg: "2rem",
+                        md: "1.9rem",
+                        sm: "1.9rem",
+                        xs: "1.9rem",
                       },
                     }}
                   />
@@ -293,6 +324,14 @@ export default function FAQ() {
               aria-controls="panel4bh-content"
               id="panel4bh-header"
             >
+              <Box sx={{ m: "0 1rem 0 0rem" }}>
+                <CheckCircle
+                  sx={{
+                    color: expanded === "panel4" ? "#fff" : "#ff7f46",
+                    fontSize: "1.9rem",
+                  }}
+                />
+              </Box>
               <Typography
                 sx={{
                   fontWeight: "500",

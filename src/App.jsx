@@ -13,6 +13,7 @@ import Footer from "./Footer";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import About from "./Components/Menu/About";
 import Home from "./Components/Menu/Home";
+import Directions from "./Components/Menu/Directions";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="directions" element={<Directions />} />
       </Routes>
       <Footer />
     </Box>

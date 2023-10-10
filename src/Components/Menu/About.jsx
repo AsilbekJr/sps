@@ -30,7 +30,7 @@ const About = () => {
       >
         <Container maxWidth="lg">
           <Box sx={{ py: { lg: "3rem", md: "2rem", sm: "1rem", xs: "1rem" } }}>
-            <Title titleText={"Biz haqimizda"} color="#071952" />
+            <Title titleText={"Biz haqimizda"} />
           </Box>
           <Box>
             <Grid container spacing={4}>
