@@ -7,11 +7,9 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
-import Title from "../../Title";
-import Statistics from "../../Statistics";
+
 import { rubik } from "../../fonts/fonts";
-import Teachers from "../../Teachers";
-import FAQ from "../../FAQ";
+import Dastur from "../../Dastur";
 
 const Directions = () => {
   const [scroll, setScroll] = useState(false);
@@ -245,6 +243,9 @@ const Directions = () => {
             </Grid>
           </Grid>
         </Container>
+      </Box>
+      <Box>
+        <Dastur />
       </Box>
     </ThemeProvider>
   );
