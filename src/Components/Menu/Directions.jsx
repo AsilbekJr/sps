@@ -69,46 +69,18 @@ const Directions = () => {
                   {" "}
                   Farzandingiz kelajagi uchun u qiziqadigan yo'nalishni tanlang.
                 </Typography>
-                <Button
-                  sx={{
-                    backgroundColor: "#ef7a0e",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: {
-                      lg: ".9rem",
-                      md: ".8rem",
-                      sm: ".7rem",
-                      xs: ".7rem",
-                    },
-                    // width: { lg: "70%", md: "60px", sm: "50%", xs: "50%" },
-                    p: {
-                      lg: "1rem 3rem",
-                      md: ".9rem 2rem",
-                      sm: ".7rem 2rem",
-                      xs: ".7rem 1.8rem",
-                    },
-                    margin: {
-                      lg: "2rem 1rem",
-                      md: "2rem 1rem",
-                      sm: "1rem 8px",
-                      xs: "1rem 8px",
-                    },
-                    borderRadius: "30px",
-                    fontWeight: "700",
-                    letterSpacing: "1.3px",
-                    "&:hover": {
-                      background: "#fff4f4",
-                      color: "#ef7a0e",
-                    },
-                  }}
-                  variant={"contained"}
-                >
-                  Batafsil
-                </Button>
               </Box>
             </Grid>
-            <Grid item lg={6} md={6} sm={12} xs={12}>
+            <Grid
+              item
+              lg={6}
+              md={6}
+              sm={12}
+              xs={12}
+              sx={{
+                display: { lg: "block", md: "block", sm: "none", xs: "none" },
+              }}
+            >
               <Grid container spacing={2}>
                 <Grid
                   item
@@ -125,7 +97,12 @@ const Directions = () => {
                     },
                   }}
                 >
-                  <Box sx={{ width: "100%", height: "100%" }}>
+                  <Box
+                    sx={{
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  >
                     <img
                       style={{
                         width: "100%",
@@ -242,10 +219,117 @@ const Directions = () => {
               </Grid>
             </Grid>
           </Grid>
+          <Dastur />
+          <Box sx={{ my: "6rem" }}>
+            <Grid container spacing={4}>
+              <Grid item lg={6} md={6} sm={12} xs={12}>
+                <Box
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    display: {
+                      lg: "block",
+                      md: "block",
+                      sm: "none",
+                      xs: "none",
+                    },
+                  }}
+                >
+                  <img
+                    style={{ width: "100%", height: "100%" }}
+                    src="https://internationalteacherstraining.com/blog/wp-content/uploads/2017/07/20.03.2020-10-Essential-Needs-for-Teacher-Training-728x370.jpg"
+                  />
+                </Box>
+                <Box
+                  sx={{
+                    display: {
+                      lg: "none",
+                      md: "none",
+                      sm: "block",
+                      xs: "block",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: "2rem", fontWeight: "600" }}>
+                    Tajribali ustozlardan bilim oling!
+                  </Typography>
+                  <Typography sx={{ fontSize: "1rem", fontWeight: "300" }}>
+                    Bizning xususiy maktabimizda sizga tajribali ustozlar
+                    tomonidan yuqori darajadagi ta'lim beriladi.
+                    Ustozlarimizning ko'pgina yillar davomida o'zlarining
+                    sohasida yuqori darajadagi malakaga ega bo'lganligi,
+                    ularning o'quvchilarga bilim berishdagi samaradorligini
+                    ta'minlaydi. Bizda ta'lim beruvchi ustozlar mahalliy va
+                    halqaro sertifikat va diplomlar sohibi hisoblanadi.
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid item lg={6} md={6} sm={12} xs={12}>
+                <Box
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    display: {
+                      lg: "none",
+                      md: "none",
+                      sm: "block",
+                      xs: "block",
+                    },
+                  }}
+                >
+                  <img
+                    style={{ width: "100%", height: "100%" }}
+                    src="https://internationalteacherstraining.com/blog/wp-content/uploads/2017/07/20.03.2020-10-Essential-Needs-for-Teacher-Training-728x370.jpg"
+                  />
+                </Box>
+                <Box
+                  sx={{
+                    display: {
+                      lg: "block",
+                      md: "block",
+                      sm: "none",
+                      xs: "none",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: "2rem", fontWeight: "600" }}>
+                    Tajribali ustozlardan bilim oling!
+                  </Typography>
+                  <Typography sx={{ fontSize: "1rem", fontWeight: "300" }}>
+                    Bizning xususiy maktabimizda sizga tajribali ustozlar
+                    tomonidan yuqori darajadagi ta'lim beriladi.
+                    Ustozlarimizning ko'pgina yillar davomida o'zlarining
+                    sohasida yuqori darajadagi malakaga ega bo'lganligi,
+                    ularning o'quvchilarga bilim berishdagi samaradorligini
+                    ta'minlaydi. Bizda ta'lim beruvchi ustozlar mahalliy va
+                    halqaro sertifikat va diplomlar sohibi hisoblanadi.
+                  </Typography>
+                </Box>
+              </Grid>
+
+              <Grid item lg={6} md={6} sm={12} xs={12} sx={{ mt: "1rem" }}>
+                <Typography sx={{ fontSize: "2rem", fontWeight: "600" }}>
+                  Zamonaviy va shinam sinf xonalarida bilimingizni oshiring.
+                </Typography>
+                <Typography sx={{ fontSize: "1rem", fontWeight: "300" }}>
+                  Maktabimizda, zamonaviy va shinam sinf xonalarimiz
+                  o'quvchilarning bilimini oshirishga yordam beradi. Har bir
+                  sinf xonamizda eng so'nggi texnologiyalar bilan jihozlangan,
+                  bu esa o'quvchilarga yangi texnologiyalarni o'rganish va
+                  ulardan foydalanish imkonini beradi.
+                </Typography>
+              </Grid>
+              <Grid item lg={6} md={6} sm={12} xs={12} sx={{ mt: "1rem" }}>
+                <Box sx={{ width: "100%", height: "100%" }}>
+                  <img
+                    style={{ width: "100%", height: "100%" }}
+                    src="https://heckmondwike-fb.co.uk/wp-content/uploads/2022/04/Kents-Hill-Park-Secondary-School-Heckmondwike-Commercial-Carpet-Tiles-7_ccexpress-864x374.jpeg"
+                  />
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
         </Container>
-      </Box>
-      <Box>
-        <Dastur />
       </Box>
     </ThemeProvider>
   );

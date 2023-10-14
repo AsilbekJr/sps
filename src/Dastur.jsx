@@ -3,26 +3,18 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import {
   Box,
-  Container,
+  Grid,
   List,
   ListItem,
-  ListItemButton,
   ListItemIcon,
   ListItemText,
   ThemeProvider,
 } from "@mui/material";
-import Title from "./Title";
-import {
-  Add,
-  Verified,
-  PlusOne,
-  Remove,
-  Star,
-  Check,
-} from "@mui/icons-material";
+
+import { Add, Verified, Remove, FiberManualRecord } from "@mui/icons-material";
 import { font } from "./fonts/fonts";
 
 export default function Dastur() {
@@ -34,93 +26,94 @@ export default function Dastur() {
 
   return (
     <ThemeProvider theme={font}>
-      <Box>
-        <Box sx={{ maxWidth: "800px", margin: "auto" }}>
-          <Title textAlign={"center"} titleText={"O'quv markazi dasturi"} />
-          <Accordion
-            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
-            expanded={expanded === "panel1"}
-            onChange={handleChange("panel1")}
-          >
-            <AccordionSummary
+      <Box sx={{ p: { lg: "0", md: "0", sm: "10px", xs: "10px" } }}>
+        <Grid container spacing={2}>
+          <Grid item lg={3} md={3} sm={12} xs={12}>
+            <Accordion
               sx={{
-                p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel1" ? "#152259" : "",
-                color: expanded === "panel1" ? "#F99417" : "#000",
+                mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" },
               }}
-              expandIcon={
-                expanded === "panel1" ? (
-                  <Remove
-                    sx={{
-                      color: "#F99417",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                ) : (
-                  <Add
-                    sx={{
-                      color: "#152259",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                )
-              }
-              aria-controls="panel1bh-content"
-              id="panel1bh-header"
+              expanded={expanded === "panel1"}
+              onChange={handleChange("panel1")}
             >
-              <Box sx={{ m: "0 1rem 0 0rem" }}>
-                <Verified
-                  sx={{
-                    color: expanded === "panel1" ? "#F99417" : "#152259",
-                    fontSize: "1.9rem",
-                  }}
-                />
-              </Box>
-              <Typography
+              <AccordionSummary
                 sx={{
-                  fontWeight: "500",
-                  width: "98%",
-                  fontSize: {
-                    lg: "1.2rem",
-                    md: "1.1rem",
-                    sm: "1rem",
-                    xs: ".9rem",
-                  },
+                  p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
+                  background: expanded === "panel1" ? "#152259" : "",
+                  color: expanded === "panel1" ? "#F99417" : "#000",
                 }}
+                expandIcon={
+                  expanded === "panel1" ? (
+                    <Remove
+                      sx={{
+                        color: "#F99417",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  ) : (
+                    <Add
+                      sx={{
+                        color: "#152259",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  )
+                }
+                aria-controls="panel1bh-content"
+                id="panel1bh-header"
               >
-                Davlat standarti fanlari
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Box sx={{ p: "1rem" }}>
-                <List
+                <Box sx={{ m: "0 .6rem 0 0rem" }}>
+                  <Verified
+                    sx={{
+                      color: expanded === "panel1" ? "#F99417" : "#152259",
+                      fontSize: "1.5rem",
+                    }}
+                  />
+                </Box>
+                <Typography
                   sx={{
-                    width: "100%",
-                    maxWidth: 360,
-                    bgcolor: "background.paper",
+                    fontWeight: "500",
+                    width: "98%",
+                    fontSize: {
+                      lg: "1rem",
+                      md: "1rem",
+                      sm: ".9rem",
+                      xs: ".9rem",
+                    },
                   }}
-                  aria-label="contacts"
                 >
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                  Davlat standarti fanlari
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Box sx={{ p: "1rem" }}>
+                  <List
+                    sx={{
+                      width: "100%",
+                      maxWidth: 360,
+                      bgcolor: "background.paper",
+                    }}
+                    aria-label="contacts"
+                  >
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -137,18 +130,16 @@ export default function Dastur() {
                         }}
                         primary="Matematika"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -165,18 +156,16 @@ export default function Dastur() {
                         }}
                         primary="Fizika"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -193,18 +182,16 @@ export default function Dastur() {
                         }}
                         primary="Fizika"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -221,18 +208,16 @@ export default function Dastur() {
                         }}
                         primary="Kimyo"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -249,18 +234,16 @@ export default function Dastur() {
                         }}
                         primary="Tarix"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -277,18 +260,16 @@ export default function Dastur() {
                         }}
                         primary="Geografiya"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -305,18 +286,16 @@ export default function Dastur() {
                         }}
                         primary="Tarix"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -333,18 +312,16 @@ export default function Dastur() {
                         }}
                         primary="Ingliz tili"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -361,18 +338,16 @@ export default function Dastur() {
                         }}
                         primary="Ona tili"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemIcon>
-                        <Check
+                        <FiberManualRecord
                           sx={{
                             fontSize: {
-                              lg: "2rem",
-                              md: "1.9rem",
-                              sm: "1.9rem",
-                              xs: "1.9rem",
+                              lg: "1.2rem",
+                              md: "1rem",
+                              sm: ".9rem",
+                              xs: ".9rem",
                             },
                           }}
                         />
@@ -389,99 +364,103 @@ export default function Dastur() {
                         }}
                         primary="Jismoniy tarbiya"
                       />
-                    </ListItemButton>
-                  </ListItem>
-                </List>
-              </Box>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
-          >
-            <AccordionSummary
+                    </ListItem>
+                  </List>
+                </Box>
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+
+          <Grid item lg={3} md={3} sm={12} xs={12}>
+            {" "}
+            <Accordion
               sx={{
-                p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel2" ? "#152259" : "",
-                color: expanded === "panel2" ? "#F99417" : "#000",
+                mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" },
               }}
-              expandIcon={
-                expanded === "panel2" ? (
-                  <Remove
-                    sx={{
-                      color: "#F99417",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                ) : (
-                  <Add
-                    sx={{
-                      color: "#152259",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                )
-              }
-              aria-controls="panel2bh-content"
-              id="panel2bh-header"
+              expanded={expanded === "panel2"}
+              onChange={handleChange("panel2")}
             >
-              <Box sx={{ m: "0 1rem 0 0rem" }}>
-                <Verified
+              <AccordionSummary
+                sx={{
+                  p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
+                  background: expanded === "panel2" ? "#152259" : "",
+                  color: expanded === "panel2" ? "#F99417" : "#000",
+                }}
+                expandIcon={
+                  expanded === "panel2" ? (
+                    <Remove
+                      sx={{
+                        color: "#F99417",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  ) : (
+                    <Add
+                      sx={{
+                        color: "#152259",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  )
+                }
+                aria-controls="panel2bh-content"
+                id="panel2bh-header"
+              >
+                <Box sx={{ m: "0 .6rem 0 0rem" }}>
+                  <Verified
+                    sx={{
+                      color: expanded === "panel2" ? "#F99417" : "#152259",
+                      fontSize: "1.5rem",
+                    }}
+                  />
+                </Box>
+                <Typography
                   sx={{
-                    color: expanded === "panel2" ? "#F99417" : "#152259",
-                    fontSize: "1.9rem",
+                    fontWeight: "500",
+                    width: "98%",
+                    fontSize: {
+                      lg: "1rem",
+                      md: "1rem",
+                      sm: ".9rem",
+                      xs: ".9rem",
+                    },
                   }}
-                />
-              </Box>
-              <Typography
+                >
+                  Chuqurlashtirilgan fanlar
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
                 sx={{
-                  fontWeight: "500",
-                  width: "98%",
-                  fontSize: {
-                    lg: "1.2rem",
-                    md: "1.1rem",
-                    sm: "1rem",
-                    xs: ".9rem",
-                  },
+                  m: { lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
                 }}
               >
-                Chuqurlashtirilgan fanlar
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails
-              sx={{
-                m: { lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
-              }}
-            >
-              <List
-                sx={{
-                  width: "100%",
-                  maxWidth: 360,
-                  bgcolor: "background.paper",
-                }}
-                aria-label="contacts"
-              >
-                <ListItem disablePadding>
-                  <ListItemButton>
+                <List
+                  sx={{
+                    width: "100%",
+                    maxWidth: 360,
+                    bgcolor: "background.paper",
+                  }}
+                  aria-label="contacts"
+                >
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -498,18 +477,16 @@ export default function Dastur() {
                       }}
                       primary="SAT math"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -526,18 +503,16 @@ export default function Dastur() {
                       }}
                       primary="SAT English"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -554,18 +529,16 @@ export default function Dastur() {
                       }}
                       primary="Fizika"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -582,18 +555,16 @@ export default function Dastur() {
                       }}
                       primary="IELTS"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -610,18 +581,16 @@ export default function Dastur() {
                       }}
                       primary="IT"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -639,98 +608,100 @@ export default function Dastur() {
                       primary="Arab tili
                       "
                     />
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
-            expanded={expanded === "panel3"}
-            onChange={handleChange("panel3")}
-          >
-            <AccordionSummary
+                  </ListItem>
+                </List>
+              </AccordionDetails>
+            </Accordion>{" "}
+          </Grid>
+          <Grid item lg={3} md={3} sm={12} xs={12}>
+            <Accordion
               sx={{
-                p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel3" ? "#152259" : "",
-                color: expanded === "panel3" ? "#F99417" : "#000",
+                mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" },
               }}
-              expandIcon={
-                expanded === "panel3" ? (
-                  <Remove
-                    sx={{
-                      color: "#F99417",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                ) : (
-                  <Add
-                    sx={{
-                      color: "#152259",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                )
-              }
-              aria-controls="panel3bh-content"
-              id="panel3bh-header"
+              expanded={expanded === "panel3"}
+              onChange={handleChange("panel3")}
             >
-              <Box sx={{ m: "0 1rem 0 0rem" }}>
-                <Verified
+              <AccordionSummary
+                sx={{
+                  p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
+                  background: expanded === "panel3" ? "#152259" : "",
+                  color: expanded === "panel3" ? "#F99417" : "#000",
+                }}
+                expandIcon={
+                  expanded === "panel3" ? (
+                    <Remove
+                      sx={{
+                        color: "#F99417",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  ) : (
+                    <Add
+                      sx={{
+                        color: "#152259",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  )
+                }
+                aria-controls="panel3bh-content"
+                id="panel3bh-header"
+              >
+                <Box sx={{ m: "0 .6rem 0 0rem" }}>
+                  <Verified
+                    sx={{
+                      color: expanded === "panel3" ? "#F99417" : "#152259",
+                      fontSize: "1.5rem",
+                    }}
+                  />
+                </Box>
+                <Typography
                   sx={{
-                    color: expanded === "panel3" ? "#F99417" : "#152259",
-                    fontSize: "1.9rem",
+                    fontWeight: "500",
+                    width: "98%",
+                    fontSize: {
+                      lg: "1rem",
+                      md: "1rem",
+                      sm: ".9rem",
+                      xs: ".9rem",
+                    },
                   }}
-                />
-              </Box>
-              <Typography
+                >
+                  Qo'shimcha to'garaklar
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
                 sx={{
-                  fontWeight: "500",
-                  width: "98%",
-                  fontSize: {
-                    lg: "1.2rem",
-                    md: "1.1rem",
-                    sm: "1rem",
-                    xs: ".9rem",
-                  },
+                  m: { lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
                 }}
               >
-                Qo'shimcha to'garaklar
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails
-              sx={{
-                m: { lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
-              }}
-            >
-              <List
-                sx={{
-                  width: "100%",
-                  maxWidth: 360,
-                  bgcolor: "background.paper",
-                }}
-                aria-label="contacts"
-              >
-                <ListItem disablePadding>
-                  <ListItemButton>
+                <List
+                  sx={{
+                    width: "100%",
+                    maxWidth: 360,
+                    bgcolor: "background.paper",
+                  }}
+                  aria-label="contacts"
+                >
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -747,18 +718,16 @@ export default function Dastur() {
                       }}
                       primary="Shaxmat"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -775,18 +744,16 @@ export default function Dastur() {
                       }}
                       primary="Tasviriy San'at"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -803,19 +770,17 @@ export default function Dastur() {
                       }}
                       primary="Arab tili"
                     />
-                  </ListItemButton>
-                </ListItem>
+                  </ListItem>
 
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -832,18 +797,16 @@ export default function Dastur() {
                       }}
                       primary="IT"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -861,98 +824,100 @@ export default function Dastur() {
                       primary="Zakovat
                       "
                     />
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            sx={{ mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" } }}
-            expanded={expanded === "panel4"}
-            onChange={handleChange("panel4")}
-          >
-            <AccordionSummary
+                  </ListItem>
+                </List>
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+          <Grid item lg={3} md={3} sm={12} xs={12}>
+            <Accordion
               sx={{
-                p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
-                background: expanded === "panel4" ? "#152259" : "",
-                color: expanded === "panel4" ? "#F99417" : "#000",
+                mt: { lg: "1rem", md: "1rem", sm: ".8rem", xs: "0.8rem" },
               }}
-              expandIcon={
-                expanded === "panel4" ? (
-                  <Remove
-                    sx={{
-                      color: "#fff",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                ) : (
-                  <Add
-                    sx={{
-                      color: "#152259",
-                      fontSize: {
-                        lg: "2rem",
-                        md: "1.9rem",
-                        sm: "1.9rem",
-                        xs: "1.9rem",
-                      },
-                    }}
-                  />
-                )
-              }
-              aria-controls="panel4bh-content"
-              id="panel4bh-header"
+              expanded={expanded === "panel4"}
+              onChange={handleChange("panel4")}
             >
-              <Box sx={{ m: "0 1rem 0 0rem" }}>
-                <Verified
+              <AccordionSummary
+                sx={{
+                  p: { lg: "1rem", md: ".9rem", sm: ".8", xs: ".7" },
+                  background: expanded === "panel4" ? "#152259" : "",
+                  color: expanded === "panel4" ? "#F99417" : "#000",
+                }}
+                expandIcon={
+                  expanded === "panel4" ? (
+                    <Remove
+                      sx={{
+                        color: "#F99417",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  ) : (
+                    <Add
+                      sx={{
+                        color: "#152259",
+                        fontSize: {
+                          lg: "1.7rem",
+                          md: "1.5rem",
+                          sm: "1.4rem",
+                          xs: "1.4rem",
+                        },
+                      }}
+                    />
+                  )
+                }
+                aria-controls="panel4bh-content"
+                id="panel4bh-header"
+              >
+                <Box sx={{ m: "0 .6rem 0 0rem" }}>
+                  <Verified
+                    sx={{
+                      color: expanded === "panel4" ? "#F99417" : "#152259",
+                      fontSize: "1.5rem",
+                    }}
+                  />
+                </Box>
+                <Typography
                   sx={{
-                    color: expanded === "panel4" ? "#F99417" : "#152259",
-                    fontSize: "1.9rem",
+                    fontWeight: "500",
+                    width: "98%",
+                    fontSize: {
+                      lg: "1rem",
+                      md: "1rem",
+                      sm: ".9rem",
+                      xs: ".9rem",
+                    },
                   }}
-                />
-              </Box>
-              <Typography
+                >
+                  Maktabga tayyorgarlik
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
                 sx={{
-                  fontWeight: "500",
-                  width: "98%",
-                  fontSize: {
-                    lg: "1.2rem",
-                    md: "1.1rem",
-                    sm: "1rem",
-                    xs: ".9rem",
-                  },
+                  m: { lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
                 }}
               >
-                Maktabga tayyorgarlik
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails
-              sx={{
-                m: { lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
-              }}
-            >
-              <List
-                sx={{
-                  width: "100%",
-                  maxWidth: 360,
-                  bgcolor: "background.paper",
-                }}
-                aria-label="contacts"
-              >
-                <ListItem disablePadding>
-                  <ListItemButton>
+                <List
+                  sx={{
+                    width: "100%",
+                    maxWidth: 360,
+                    bgcolor: "background.paper",
+                  }}
+                  aria-label="contacts"
+                >
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -969,18 +934,16 @@ export default function Dastur() {
                       }}
                       primary="O'qish"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -997,18 +960,16 @@ export default function Dastur() {
                       }}
                       primary="Yozish"
                     />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  </ListItem>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -1025,19 +986,17 @@ export default function Dastur() {
                       }}
                       primary="Tasviriy San'at"
                     />
-                  </ListItemButton>
-                </ListItem>
+                  </ListItem>
 
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -1054,19 +1013,17 @@ export default function Dastur() {
                       }}
                       primary="Mental arifmetika"
                     />
-                  </ListItemButton>
-                </ListItem>
+                  </ListItem>
 
-                <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItem disablePadding>
                     <ListItemIcon>
-                      <Check
+                      <FiberManualRecord
                         sx={{
                           fontSize: {
-                            lg: "2rem",
-                            md: "1.9rem",
-                            sm: "1.9rem",
-                            xs: "1.9rem",
+                            lg: "1.2rem",
+                            md: "1rem",
+                            sm: ".9rem",
+                            xs: ".9rem",
                           },
                         }}
                       />
@@ -1084,12 +1041,12 @@ export default function Dastur() {
                       primary="Hisoblash
                       "
                     />
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </AccordionDetails>
-          </Accordion>
-        </Box>
+                  </ListItem>
+                </List>
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+        </Grid>
       </Box>
     </ThemeProvider>
   );
