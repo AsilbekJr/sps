@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import About from "./Components/Menu/About";
 import Home from "./Components/Menu/Home";
 import Directions from "./Components/Menu/Directions";
+import Blog from "./Components/Menu/Blog";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="directions" element={<Directions />} />
+        <Route path="blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Box>

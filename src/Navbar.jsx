@@ -11,7 +11,13 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { List, ListItem } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import { Call, Facebook, Instagram, Telegram } from "@mui/icons-material";
+import {
+  Call,
+  ContactPhone,
+  Facebook,
+  Instagram,
+  Telegram,
+} from "@mui/icons-material";
 import "./Style/Navbar.css";
 import { font } from "./fonts/fonts";
 import { Link } from "react-router-dom";
@@ -115,7 +121,7 @@ function Navbar() {
                 gap: "10px",
               }}
             >
-              <Call sx={{ color: "#fff", fontSize: "1.4rem" }} />
+              <img src="./images/phone.png" style={{ width: "20px" }} />
               <p className="top-text ff-rubik">998997397157</p>
             </Box>
           </Box>
