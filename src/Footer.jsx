@@ -90,17 +90,17 @@ const Footer = () => {
                   Biz haqimizda
                 </Typography>
               </ListItem>
-              <ListItem component={Link} to={"/"}>
+              <ListItem component={Link} to={"directions"}>
                 <Typography
                   variant="p"
                   sx={{ textDecoration: "none" }}
                   fontWeight={"400"}
                   color={" #808080"}
                 >
-                  Kurslar
+                  Yo'nalishlar
                 </Typography>
               </ListItem>
-              <ListItem component={Link} to={"/"}>
+              <ListItem component={Link} to={"blog"}>
                 <Typography
                   variant="p"
                   sx={{ textDecoration: "none" }}

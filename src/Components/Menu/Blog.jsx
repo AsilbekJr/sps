@@ -80,7 +80,7 @@ const Blog = () => {
   return (
     <Box
       sx={{
-        my: scroll ? "140px" : "40px",
+        mt: scroll ? "130px" : "30px",
         maxWidth: "1100px",
         marginX: "auto",
       }}
