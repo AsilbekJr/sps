@@ -90,43 +90,6 @@ const Opportunities = () => {
                   />
                 </ListItem>
               </List>
-              <Button
-                sx={{
-                  backgroundColor: "#ef7a0e",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: {
-                    lg: ".9rem",
-                    md: ".8rem",
-                    sm: ".7rem",
-                    xs: ".7rem",
-                  },
-                  // width: { lg: "70%", md: "60px", sm: "50%", xs: "50%" },
-                  p: {
-                    lg: "1rem 3rem",
-                    md: ".9rem 2rem",
-                    sm: ".7rem 2rem",
-                    xs: ".7rem 1.8rem",
-                  },
-                  margin: {
-                    lg: "2rem 1rem",
-                    md: "2rem 1rem",
-                    sm: "1rem 8px",
-                    xs: "1rem 8px",
-                  },
-                  borderRadius: "30px",
-                  fontWeight: "700",
-                  letterSpacing: "1.3px",
-                  "&:hover": {
-                    background: "#fff4f4",
-                    color: "#ef7a0e",
-                  },
-                }}
-                variant={"contained"}
-              >
-                Batafsil
-              </Button>
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12}>
