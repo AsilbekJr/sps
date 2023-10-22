@@ -91,7 +91,7 @@ const Banner = () => {
                       background: "#0f37d5",
                     }}
                   >
-                    O'quv Markazimiz
+                    Maktabimiz
                   </p>{" "}
                   <br /> Sizning Istiqbolingizga Investitsiya!
                 </Typography>

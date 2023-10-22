@@ -111,7 +111,7 @@ const Testimonials = () => {
                           },
                         }}
                       >
-                        Kurs nafaqat teorik bilimlarni, balki amaliy
+                        Darslar nafaqat teorik bilimlarni, balki amaliy
                         tajribalarni ham o'z ichiga olgan. Ustozlar har bir
                         talabaga individual yondashishdi va har birimizning
                         o'zimizga xos savollari va muammolari bilan
@@ -160,8 +160,8 @@ const Testimonials = () => {
                           },
                         }}
                       >
-                        Bu kursni tugatganimdan so'ng, men o'z sohamda yanada
-                        ishonchli bo'ldim. Kursdagi har bir dars meni yangi
+                        Bu darslarni tugatganimdan so'ng, men o'z sohamda yanada
+                        ishonchli bo'ldim. Darslardagi har bir dars meni yangi
                         bilimlar bilan tanishtirdi va meni o'z sohamda yanada
                         mukammal bo'lishga yo'l qo'ydi
                       </Typography>
@@ -210,7 +210,7 @@ const Testimonials = () => {
                           },
                         }}
                       >
-                        Bu kursni bitirganimdan so'ng, men o'zimni yangi va
+                        Bu darslarni bitirganimdan so'ng, men o'zimni yangi va
                         qiziqarli ishlar qilishga tayyor his etdim. Ustozlar har
                         bir darsni tushunishga yordam berdilar va har doim
                         savollarga javob berishga tayyor edilar.
@@ -258,10 +258,10 @@ const Testimonials = () => {
                           },
                         }}
                       >
-                        O'quv markazidagi ustozlar o'z sohasida aniq va
-                        tushunarli. Ular har bir mavzuni qanday o'rganish
-                        kerakligini tushuntirishga yordam berdilar. Men bu
-                        kursni do'stlarimga ham tavsiya qilaman.
+                        Maktabidagi ustozlar o'z sohasida aniq va tushunarli.
+                        Ular har bir mavzuni qanday o'rganish kerakligini
+                        tushuntirishga yordam berdilar. Men bu darslarni
+                        do'stlarimga ham tavsiya qilaman.
                       </Typography>
                       <Avatar
                         alt="Aziza Husenova"
@@ -306,11 +306,10 @@ const Testimonials = () => {
                           },
                         }}
                       >
-                        Bu o'quv markazini bitirganimdan so'ng, men o'zimni
-                        yangi va qiziqarli ishlar qilishga tayyor his etdim.
-                        Kursdagi ustozlar har bir darsni tushunishga yordam
-                        berdilar va har doim savollarga javob berishga tayyor
-                        edilar.
+                        Bu Maktabini bitirganimdan so'ng, men o'zimni yangi va
+                        qiziqarli ishlar qilishga tayyor his etdim. Darslardagi
+                        ustozlar har bir darsni tushunishga yordam berdilar va
+                        har doim savollarga javob berishga tayyor edilar.
                       </Typography>
                       <Avatar
                         alt="Hilola G'afforova"

@@ -9,6 +9,7 @@ import {
 import React from "react";
 import "./Style/ModernStudy.css";
 import { font } from "./fonts/fonts";
+import { Link } from "react-router-dom";
 const ModernStudy = () => {
   return (
     <ThemeProvider theme={font}>
@@ -78,12 +79,14 @@ const ModernStudy = () => {
                       },
                     }}
                   >
-                    Bizning o'quv markazimizda sizning muvaffaqiyatingiz uchun
-                    hamma narsa tayyor. Bizning o'qituvchilarimiz va
-                    xodimlarimiz sizga xoxlagan paytda yordam berishga tayyor.
+                    Bizning Maktabimizda sizning muvaffaqiyatingiz uchun hamma
+                    narsa tayyor. Bizning o'qituvchilarimiz va xodimlarimiz
+                    sizga xoxlagan paytda yordam berishga tayyor.
                   </Typography>
                 </Box>
                 <Button
+                  component={Link}
+                  to="help"
                   sx={{
                     display: "flex",
                     alignItems: "center",

@@ -21,14 +21,6 @@ const VideoInfo = () => {
               textAlign: "center",
             }}
           >
-            <Box
-              className="video_btn"
-              component={"a"}
-              href="https://youtu.be/7WuA4jdLZyQ"
-              target="_blank"
-            >
-              <PlayArrow sx={{ color: "#5586f7", fontSize: "30px" }} />
-            </Box>
             <Typography
               sx={{
                 color: "#fff",
@@ -37,7 +29,7 @@ const VideoInfo = () => {
               }}
             >
               {" "}
-              O'quv markazimiz haqida{" "}
+              Maktabimiz haqida{" "}
             </Typography>
             <Typography
               sx={{
@@ -45,41 +37,17 @@ const VideoInfo = () => {
                 fontSize: { lg: "18px", md: "16px", sm: "15px", xs: "15px" },
               }}
             >
-              O'quv markazimiz haqida barcha ma'lumotlarni quyidagi tugmani
-              bosib bilib olishingiz mumkin.
+              Maktabimiz haqida barcha ma'lumotlarni quyidagi tugmani bosib
+              bilib olishingiz mumkin.
             </Typography>
-            <Button
-              sx={{
-                backgroundColor: "#ef7a0e",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: {
-                  lg: ".9rem",
-                  md: ".8rem",
-                  sm: ".7rem",
-                  xs: ".7rem",
-                },
-                // width: { lg: "70%", md: "60px", sm: "50%", xs: "50%" },
-                p: {
-                  lg: "1rem 3rem",
-                  md: ".9rem 2rem",
-                  sm: ".7rem 2rem",
-                  xs: ".7rem 1.8rem",
-                },
-                margin: "1rem",
-                borderRadius: "30px",
-                fontWeight: "700",
-                letterSpacing: "1.3px",
-                "&:hover": {
-                  background: "#fff4f4",
-                  color: "#ef7a0e",
-                },
-              }}
-              variant={"contained"}
+            <Box
+              className="video_btn"
+              component={"a"}
+              href="https://youtu.be/7WuA4jdLZyQ"
+              target="_blank"
             >
-              Batafsil
-            </Button>
+              <PlayArrow sx={{ color: "#5586f7", fontSize: "30px" }} />
+            </Box>
           </Box>
         </Box>
       </Box>

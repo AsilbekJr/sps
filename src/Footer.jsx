@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import "./Style/Footer.css";
-import { Instagram, Telegram, YouTube } from "@mui/icons-material";
+import { Facebook, Instagram, Telegram, YouTube } from "@mui/icons-material";
 import { font } from "./fonts/fonts";
 import { Link } from "react-router-dom";
 
@@ -45,22 +45,49 @@ const Footer = () => {
 
                 <ListItem>
                   <Typography color={"#808080"}>
-                    Sadikov O'quv Markazi, o'quvchilarni jamiyatdagi faol va
-                    samarali a'zolar sifatida tarbiyalashga intiladi.
+                    Sadikov Maktabi, o'quvchilarni jamiyatdagi faol va samarali
+                    a'zolar sifatida tarbiyalashga intiladi.
                   </Typography>
                 </ListItem>
                 <ListItem>
-                  <ButtonGroup>
-                    <IconButton>
-                      <Telegram />
-                    </IconButton>
-                    <IconButton>
-                      <Instagram />
-                    </IconButton>
-                    <IconButton>
-                      <YouTube />
-                    </IconButton>
-                  </ButtonGroup>
+                  <List sx={{ display: "flex" }}>
+                    <ListItem
+                      component={Link}
+                      to="https://www.facebook.com/100007500393369/videos/682680379985802/"
+                      target="_blank"
+                    >
+                      <IconButton>
+                        <Facebook />
+                      </IconButton>
+                    </ListItem>
+                    <ListItem
+                      component={Link}
+                      to="https://instagram.com/sadikov_private_school?igshid=MzRlODBiNWFlZA=="
+                      target="_blank"
+                    >
+                      <IconButton>
+                        <Instagram />
+                      </IconButton>
+                    </ListItem>
+                    <ListItem
+                      component={Link}
+                      to="https://t.me/frr_uzbek"
+                      target="_blank"
+                    >
+                      <IconButton>
+                        <Telegram />
+                      </IconButton>
+                    </ListItem>
+                    <ListItem
+                      component={Link}
+                      to="https://youtu.be/7WuA4jdLZyQ"
+                      target="_blank"
+                    >
+                      <IconButton>
+                        <YouTube />
+                      </IconButton>
+                    </ListItem>
+                  </List>
                 </ListItem>
               </List>
             </Grid>

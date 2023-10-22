@@ -25,10 +25,10 @@ const Opportunities = () => {
             <Box>
               <Title titleText={"Bizdagi qulayliklar"} textAlign={"left"} />
               <Typography sx={{ color: "#636363" }}>
-                O'quv markazimizda sizning o'rganish jarayoningizni qulay va
-                samarali qilish uchun bir qator qulayliklar mavjud. Bizning
-                zamonaviy sinf xonalarimiz, eng so'nggi texnologiyalar bilan
-                jihozlangan kompyuter xonalari va kutubxonamiz sizning o'rganish
+                Maktabimizda sizning o'rganish jarayoningizni qulay va samarali
+                qilish uchun bir qator qulayliklar mavjud. Bizning zamonaviy
+                sinf xonalarimiz, eng so'nggi texnologiyalar bilan jihozlangan
+                kompyuter xonalari va kutubxonamiz sizning o'rganish
                 jarayoningizni yaxshilashga yordam beradi.
               </Typography>
             </Box>

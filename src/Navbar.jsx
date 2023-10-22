@@ -11,13 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { List, ListItem } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import {
-  Call,
-  ContactPhone,
-  Facebook,
-  Instagram,
-  Telegram,
-} from "@mui/icons-material";
+import { Facebook, Instagram, Telegram, YouTube } from "@mui/icons-material";
 import "./Style/Navbar.css";
 import { font } from "./fonts/fonts";
 import { Link } from "react-router-dom";
@@ -100,14 +94,33 @@ function Navbar() {
                 </p>
               </Box>
               <List className="top-nav-menu" sx={{ display: "flex" }}>
-                <ListItem>
+                <ListItem
+                  component={Link}
+                  to="https://www.facebook.com/100007500393369/videos/682680379985802/"
+                  target="_blank"
+                >
                   <Facebook sx={{ color: "#fff", fontSize: "1.4rem" }} />
                 </ListItem>
-                <ListItem>
+                <ListItem
+                  component={Link}
+                  to="https://instagram.com/sadikov_private_school?igshid=MzRlODBiNWFlZA=="
+                  target="_blank"
+                >
                   <Instagram sx={{ color: "#fff", fontSize: "1.4rem" }} />
                 </ListItem>
-                <ListItem>
+                <ListItem
+                  component={Link}
+                  to="https://t.me/frr_uzbek"
+                  target="_blank"
+                >
                   <Telegram sx={{ color: "#fff", fontSize: "1.4rem" }} />
+                </ListItem>
+                <ListItem
+                  component={Link}
+                  to="https://youtu.be/7WuA4jdLZyQ"
+                  target="_blank"
+                >
+                  <YouTube sx={{ color: "#fff", fontSize: "1.4rem" }} />
                 </ListItem>
               </List>
             </Box>
