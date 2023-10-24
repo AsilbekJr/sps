@@ -12,6 +12,7 @@
   border-radius: 20px;
   min-height: 450px;
   transition: all 0.4s ease;
+  overflow: hidden;
 }
 .tr_footer {
   display: flex;
@@ -21,6 +22,60 @@
   padding-bottom: 2rem;
 }
 
+.social-box {
+  position: absolute;
+  right: -50px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.social-item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #002f6c;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.social-item .card-icon {
+  color: #002f6c;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+}
+.tr_card:hover .social-box {
+  right: 30px;
+  opacity: 1;
+}
+.social-item.one:hover.social-item.one > .card-icon,
+.social-item.one:hover {
+  background-color: #002f6c;
+  color: #fff;
+}
+.social-item.two:hover.social-item.two > .card-icon,
+.social-item.two:hover {
+  background-color: #002f6c;
+  color: #fff;
+}
+.social-item.tree:hover.social-item.tree > .card-icon,
+.social-item.tree:hover {
+  background-color: #002f6c;
+  color: #fff;
+}
+
+.tr_card:hover {
+  background-color: #002f6c;
+  color: #fff;
+}
+
+.tr_card .card-icon {
+  font-size: 1.3rem;
+}
 @media screen and (max-width: 600px) {
   .teachers {
     margin-top: 4rem;
