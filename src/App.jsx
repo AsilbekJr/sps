@@ -16,6 +16,7 @@ import Home from "./Components/Menu/Home";
 import Directions from "./Components/Menu/Directions";
 import Blog from "./Components/Menu/Blog";
 import TeachersHelp from "./TeachersHelp";
+import NewsDetail from "./NewsDetail";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="directions" element={<Directions />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="blog/:id" element={<NewsDetail />} />
         <Route path="help" element={<TeachersHelp />} />
       </Routes>
       <Footer />
