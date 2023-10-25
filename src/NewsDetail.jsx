@@ -5,7 +5,6 @@ import { newsData } from "./Data/news";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import Title from "./Title";
 
 const NewsDetail = () => {
   const [data, setData] = useState([]);

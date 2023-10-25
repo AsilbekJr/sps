@@ -156,7 +156,7 @@ function Navbar() {
           <Container maxWidth="lg">
             <Toolbar disableGutters>
               <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
-                <img src="/images/logo.png" width={40} />
+                <img src="http://localhost:5173/images/logo.png" width={40} />
               </Box>
               <Box
                 sx={{
