@@ -62,10 +62,10 @@ const NewsDetail = () => {
           <Box
             sx={{
               padding: {
-                lg: "2rem 1rem",
-                md: "2rem 1rem",
-                sm: "1rem",
-                xs: "1rem",
+                lg: "2rem 2rem",
+                md: "2rem 2rem",
+                sm: "1.5rem",
+                xs: "1.5rem",
               },
             }}
           >
@@ -124,7 +124,9 @@ const NewsDetail = () => {
                 },
               }}
             >
-              {data.desc}
+              {data.desc?.map((item) => (
+                <Typography sx={{ my: "1rem" }}>{item}</Typography>
+              ))}
             </Typography>
           </Box>
         </Box>

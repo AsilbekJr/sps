@@ -16,13 +16,15 @@ import { newsData } from "../../Data/news";
 const Blog = () => {
   const news = newsData;
   const [sliceData, setSliceData] = useState([]);
+  const [allNews, setAllNews] = useState(false);
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    setSliceData(news.slice(-4, -1).reverse());
+    console.log("hey");
+    setSliceData(allNews ? news : news.slice(-4, -1).reverse());
     window.addEventListener("scroll", stickNavbar);
     return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
+  }, [allNews]);
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
@@ -209,7 +211,16 @@ const Blog = () => {
               </Grid>
             ))}
           </Grid>
-          <Button sx={{ mt: "1rem" }}>Batafsil</Button>
+          {!allNews && (
+            <Button
+              sx={{ mt: "1rem" }}
+              onClick={() => {
+                setAllNews(true);
+              }}
+            >
+              Batafsil
+            </Button>
+          )}
         </Container>
       </ThemeProvider>
     </Box>
